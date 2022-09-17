@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="" class="logo"><i class='bx bx-vector' ></i><span>Vector</span></a>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li><a href="#home" class="nav-link active-navlink">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="bottom-navpanel-section">
+                <div class="media-icon">
+                    <a href=""><i class='bx bxl-facebook' ></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                    <a href=""><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <div class="contact-menu-panel">
+                    <i class='bx bx-phone'></i><span>+91 987654321</span>
+                </div>
+                </div>
+                <i class='bx bx-x navClose'></i>
+            </div>
+            <div class="contact-menu">
+                <i class='bx bx-phone'></i><span>+91 987654321</span>
+            </div>
+            <div class="hamberg-menu">
+                <i class='bx bx-menu-alt-right' ></i>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <!-- home -->
+        <section class="home" id="home">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="im.jpg" alt="">
+                        <div class="home-details">
+                          <h4>First Page</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ab aliquam quaerat provident maxime unde.</p>
+                        </div>
+                    </div>
+                  <div class="swiper-slide"><img src="bg.jpg" alt="">
+                    <div class="home-details">
+                      <h4>Second Page</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ab aliquam quaerat provident maxime unde.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-button-next swiperbtn"></div>
+                <div class="swiper-button-prev swiperbtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="image-content">
+                    <!-- <img src="bg.jpg" alt=""> -->
+                </div>
+                <div class="imgText">
+                    <i class='bx bxs-heart'></i>
+                    <p class="about-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, recusandae.</p>
+                </div>
+            </div>
+            <div class="about-details">
+                <h4 class="subtitle">How are you</h4>
+                <h2 class="title">I am Suraj Pandey</h2>
+                <p class="title-description">a graphic and web designer Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Cumque, temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ad!</p>
+
+                <div class="buttonCtn">
+                    <button>About us</button>
+                    <a href=""><span>See More</span><i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial -->
+
+        <section class="testimonial" id="testimonial">
+            <div class="review-text">
+                <h2>Reviews</h2>
+                <h4>What Customers Says</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quia labore facere odit. Reiciendis, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deleniti.</p>
+            </div>
+            <div class="review-sldr">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testi">
+                          <div class="sldr-content">
+                              <img src="girl.jpg" alt="">
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga blanditiis dolor consequatur fugiat minima autem?</p>
+                              <i class='bx bxs-quote-alt-left' ></i>
+                              <h4 class="autor-name">Suraj Mahi</h4>
+                          </div>
+                        </div>
+                        <div class="swiper-slide testi">
+                        3
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiperbtn"></div>
+                    <div class="swiper-button-prev swiperbtn"></div>
+                    <div class="swiper-pagination"></div>
+                   
+                  </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- javscript -->
+    <script src="script.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+</body>
+</html>
